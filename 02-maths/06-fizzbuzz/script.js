@@ -11,6 +11,24 @@
 
 (function() {
 
-    // your code here
+    let result = "" ;
+
+    for (i=1 ; i <101 ; ++) {
+
+        if ( i % 3 == 0) {
+            
+            result= i + "fizz";
+
+        } else if ( i % 5 == 0) {
+            
+            result = i + "buzz";
+
+        } else if ( (i % 3 == 0) && ( i % 5 == 0)){
+
+            result = i + "fizzbuzz";
+        }
+    };
+
+    console.log(result);
 
 })();
