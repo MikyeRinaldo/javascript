@@ -9,8 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function changeBackground(color) {
 
-    // your code here
+    let btnred = document.querySelector('#red');
+    let btngreen = document.querySelector('#green');
+    let btnyellow = document.querySelector('#yellow');
+    let btnblue = document.querySelector('#blue');
+
+    btnred.addEventListener ('click', () => {
+        document.body.style.background = 'red' ;
+    } )
+    
+    btngreen.addEventListener ('click', () =>{
+        document.body.style.background = 'green' ;
+    } )
+
+    btnyellow.addEventListener ('click', () =>{
+        document.body.style.background = 'yellow' ;
+    } )
+
+    btnblue.addEventListener ('click', () =>{
+        document.body.style.background = 'blue' ;
+    } )
 
 })();
