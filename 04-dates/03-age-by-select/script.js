@@ -11,6 +11,19 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+        let day = document.getElementById("dob-day").value;
+        let month = (document.getElementById("dob-month").value);
+        let actualMonth = month - 1 ;
+        let year = document.getElementById("dob-year").value;
+
+
+    }
 
 })();
+
+
+// comparer le jour, le mois et l'année donnée à la date actuelle.
+// obtenir les infos, les exécuter.
+
