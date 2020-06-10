@@ -13,17 +13,26 @@
 
     document.getElementById("run").addEventListener("click", function(){
 
-        let day = document.getElementById("dob-day").value;
-        let month = (document.getElementById("dob-month").value);
-        let actualMonth = month - 1 ;
+        // string() => permet de considérer les infos en string et pas number.
+
+        let day = String(document.getElementById("dob-day").value);
+        let month = String(document.getElementById("dob-month").value);
         let year = document.getElementById("dob-year").value;
 
 
+        var today = new Date();
+    
+        var age = today.getFullYear() - year;
+
+        var m = today.getMonth() - month + 1;
+
+        if (m <= 0) {
+            if (today.getDate() <= day) {
+            age--;
+        }
     }
 
+    alert("Vous avez "+age+" ans ")
+
+    })
 })();
-
-
-// comparer le jour, le mois et l'année donnée à la date actuelle.
-// obtenir les infos, les exécuter.
-
