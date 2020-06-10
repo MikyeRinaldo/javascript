@@ -89,6 +89,16 @@
         },
     ];
 
-    // your code here
+        document.getElementById("run").addEventListener("click", function(){
+
+            people.forEach(element => {
+                if(element.firstname == "Jean" && element.lastname == "Dupont"){
+                    
+                    element.index = people.indexOf(element);
+                    console.log(element);
+                };
+            });
+        
+        });
 
 })();
