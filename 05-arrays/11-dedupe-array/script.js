@@ -28,6 +28,11 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+        let triage = new Set(fruits); 
+        // "Set" (pas oublier la Maj, c'est un constructeur) permet de créer une array avec des valeurs uniques. Il faut "new" devant.
+        console.log(triage);
+    });
 
 })();

@@ -22,5 +22,21 @@
         "Lucas",
     ]);
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+        console.log(people.size);
+
+       let present = (people.has("Alexandre"));
+
+        if (present == true) {
+
+            console.log("Alexandre est présent.")
+        
+        } else {
+            console.log("Alexandre est absent.")
+
+        }
+
+    });
+    
 })();

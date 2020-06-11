@@ -89,6 +89,14 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        const sumAge = people.reduce((accumulator, currentValue) => {
+            return accumulator + currentValue.age;
+        },0)    // 0 établi la valeur Initiale.
+                                            //.age permet de viser l'age dans l'array qu'on veut additionner.
+        console.log(sumAge);
+
+    });
 
 })();

@@ -38,5 +38,18 @@
         "arboré",
     ]);
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+
+        const arrAdjective = Array.from(adjectives);
+
+        const randomBird = birds[Math.floor(Math.random() * birds.length)];
+
+        const randomAdjective = arrAdjective[Math.floor(Math.random() * arrAdjective.length)];
+
+        console.log(randomBird + " " + randomAdjective);
+
+    });
+
+
 })();
