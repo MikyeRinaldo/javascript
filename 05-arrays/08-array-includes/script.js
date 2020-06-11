@@ -26,6 +26,16 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+        if (fruits.includes("apple")) {
+
+            console.log("There is an apple.");
+        
+        } else {
+            console.log("There are no more apple.");
+        }
+
+    });
 
 })();

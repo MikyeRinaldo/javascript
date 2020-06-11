@@ -95,10 +95,10 @@
                 if(element.firstname == "Jean" && element.lastname == "Dupont"){
                     
                     element.index = people.indexOf(element);
-                    console.log(element);
+                    console.log(element.email);
+                    console.log(element.index);
                 };
             });
-        
         });
 
 })();
