@@ -10,6 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
+
+    document.getElementById("run").addEventListener("click", function(){
+
     const computers = [
         {id: "0001", available: false, user: "leny", os: "macOS"},
         {id: "0002", available: false, user: "Nicolas"},
@@ -26,5 +29,20 @@
         os: "linux",
         user: null,
     };
-    // your code here
+    
+    computers.forEach(element => {
+
+        if (element.available == null)
+            element.available = defaultProps.available;
+
+        if (element.user == null)
+        element.user = defaultProps.user;
+
+        if (element.os == null)
+        element.os = defaultProps.os;
+
+        });
+        console.log(computers);
+
+    });
 })();

@@ -41,13 +41,19 @@
     document.getElementById("run").addEventListener("click", function(){
 
 
+        
+
+        const randomBird = Math.floor(Math.random() * birds.length);
+
+        const randomAdjective = Math.floor(Math.random() * adjectives.size);
+
         const arrAdjective = Array.from(adjectives);
 
-        const randomBird = birds[Math.floor(Math.random() * birds.length)];
+        //console.log(randomBird.name + " " + randomAdjective);
 
-        const randomAdjective = arrAdjective[Math.floor(Math.random() * arrAdjective.length)];
+        document.getElementById("target").innerHTML= birds[randomBird].name;
 
-        console.log(randomBird + " " + randomAdjective);
+        // les noms sont ok. reste les adjectif et la condition pour le feminin.
 
     });
 

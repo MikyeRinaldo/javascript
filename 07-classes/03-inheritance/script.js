@@ -14,6 +14,33 @@
         sayHello() {
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
+
+        constructor(name){
+            this.name= name;
+        }
     }
-    // your code here
+    
+    class Cat extends Animal{
+        constructor(name){
+            super(name);
+        }
+        static get greeting() {return 'miaouuuu';}
+    }
+
+    class Dog extends Animal{
+        constructor(name){
+            super(name);
+        }
+        static get greeting() {return 'woooffff';}
+    }
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        let cat1 = new Cat('Misty');
+        let dog1 = new Dog('Flapi');
+
+        console.log(cat1.sayHello());
+        console.log(dog1.sayHello());
+
+    });
 })();
