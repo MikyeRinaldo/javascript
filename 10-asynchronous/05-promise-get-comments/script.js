@@ -11,6 +11,38 @@
 
 (() => {
 
-    
+    document.getElementById("run").addEventListener("click", function() {
+        
+        window.lib.getPosts()
+            
+            .then ((articlesArr) => {
+
+                    articlesArr.forEach(element => {
+                        
+                    element.comments = window.lib.getComments(element.id);
+                
+                });
+
+                console.table(articlesArr);
+
+            })
+
+            .catch((error)=>{
+
+                console.log(error);
+
+            });
+
+        // tryPost.then((result)=>{
+        //     console.table(result);
+
+        // })
+
+        // tryPost.catch((error)=>{
+        //     console.log(error);
+
+        // })
+        
+    });
 
 })();
