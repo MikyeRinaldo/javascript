@@ -12,9 +12,7 @@
 (() => {
 
     document.getElementById("run").addEventListener("click", async function() {
-        
-        window.lib.getPosts()
-            
+
         console.table(await window.lib.getPosts())
     });
 })();

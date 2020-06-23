@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", async function() {
+
+        articleArr = await window.lib.getPosts();
+
+        for (let article of articleArr){
+            article.comment = await window.lib.getComments(article.id);
+        }
+
+        console.table(articleArr);
+
+    });
 })();
