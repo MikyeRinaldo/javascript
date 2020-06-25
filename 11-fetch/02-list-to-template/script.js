@@ -32,7 +32,7 @@
     document.querySelector("#run").addEventListener("click", () => {
         xmensRecup();
     });
-
+})();
 
 //     async function xmensRecup() {
 
@@ -64,4 +64,4 @@
 //     document.querySelector("#run").addEventListener("click", () => {
 //         xmensRecup();
 //     });
-})();
+
